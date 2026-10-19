@@ -1,0 +1,2 @@
+# Automotive udev rule for USB mass storage auto-detection
+ACTION=="add", SUBSYSTEM=="block", ENV{ID_BUS}=="usb", TAG+="systemd", ENV{SYSTEMD_WANTS}+="ojt-media-manager.service"

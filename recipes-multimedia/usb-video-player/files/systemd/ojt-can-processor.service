@@ -1,0 +1,15 @@
+[Unit]
+Description=Automotive CAN Bus Telematics Processor
+After=ojt-media-manager.service
+Wants=ojt-media-manager.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ojt-can-processor --simulate
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
