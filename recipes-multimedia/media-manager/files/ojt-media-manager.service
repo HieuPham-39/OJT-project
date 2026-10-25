@@ -1,0 +1,15 @@
+[Unit]
+Description=Automotive USB Video Player - Core Media Manager Service
+After=dbus.service systemd-udevd.service
+Requires=dbus.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ojt-media-manager
+Restart=always
+RestartSec=2
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

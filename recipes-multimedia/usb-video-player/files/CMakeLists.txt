@@ -28,18 +28,12 @@ target_link_libraries(ojt_common PUBLIC
     pthread
 )
 
-# Subprojects (Using C-version of media-manager: media-manager-VerC)
-add_subdirectory(media-manager-VerC)
+# Subprojects (Using C-version of media-manager)
 add_subdirectory(can-processor)
 add_subdirectory(video-playback)
 add_subdirectory(ui-controller)
 
-# Install D-Bus config
-install(FILES config/org.automotive.MediaManager.conf
-        DESTINATION ${CMAKE_INSTALL_DATADIR}/dbus-1/system.d)
-
 # Install systemd service files
-install(FILES systemd/ojt-media-manager.service
-              systemd/ojt-can-processor.service
+install(FILES systemd/ojt-can-processor.service
               systemd/ojt-video-playback.service
         DESTINATION lib/systemd/system)

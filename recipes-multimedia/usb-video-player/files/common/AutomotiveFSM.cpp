@@ -164,7 +164,7 @@ bool AutomotiveFSM::handleEvent(Event event, const std::string& reason) {
 }
 
 void AutomotiveFSM::setVehicleSpeed(double speedKmh) {
-    std::lock_guard<std::mutex> lock(m_mutex);
+    std::unique_lock<std::mutex> lock(m_mutex);
     double oldSpeed = m_vehicleSpeed;
     m_vehicleSpeed = (speedKmh < 0.0) ? 0.0 : speedKmh;
 
@@ -188,7 +188,7 @@ void AutomotiveFSM::setVehicleSpeed(double speedKmh) {
 }
 
 void AutomotiveFSM::setVehicleGear(const std::string& gear) {
-    std::lock_guard<std::mutex> lock(m_mutex);
+    std::unique_lock<std::mutex> lock(m_mutex);
     m_gear = gear;
     LOG_I("FSM", "Vehicle Gear updated: " + m_gear);
 

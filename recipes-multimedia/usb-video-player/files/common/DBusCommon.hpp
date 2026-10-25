@@ -20,7 +20,7 @@ struct VideoTrack {
 
 // D-Bus Introspection XML representing the complete Automotive Media Manager Interface
 constexpr const char* INTROSPECTION_XML = 
-R"(<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+R"xml(<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
 "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
 <node>
   <interface name="org.automotive.MediaManager1">
@@ -118,6 +118,6 @@ R"(<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN
       <arg name="warning_message" type="s"/>
     </signal>
   </interface>
-</node>)";
+</node>)xml";
 
 } // namespace automotive
