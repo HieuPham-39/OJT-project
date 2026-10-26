@@ -1,0 +1,8 @@
+/home/hieupm/Documents/yocto_project/meta-ojt/recipes-multimedia/qml-video-player/files/build_host/CMakeFiles/ojt-qml-player.dir
+/home/hieupm/Documents/yocto_project/meta-ojt/recipes-multimedia/qml-video-player/files/build_host/CMakeFiles/edit_cache.dir
+/home/hieupm/Documents/yocto_project/meta-ojt/recipes-multimedia/qml-video-player/files/build_host/CMakeFiles/rebuild_cache.dir
+/home/hieupm/Documents/yocto_project/meta-ojt/recipes-multimedia/qml-video-player/files/build_host/CMakeFiles/list_install_components.dir
+/home/hieupm/Documents/yocto_project/meta-ojt/recipes-multimedia/qml-video-player/files/build_host/CMakeFiles/install.dir
+/home/hieupm/Documents/yocto_project/meta-ojt/recipes-multimedia/qml-video-player/files/build_host/CMakeFiles/install/local.dir
+/home/hieupm/Documents/yocto_project/meta-ojt/recipes-multimedia/qml-video-player/files/build_host/CMakeFiles/install/strip.dir
+/home/hieupm/Documents/yocto_project/meta-ojt/recipes-multimedia/qml-video-player/files/build_host/CMakeFiles/ojt-qml-player_autogen.dir
